@@ -2,13 +2,15 @@
    All foods are vegetarian, egg-free and peanut-free. Nutrition values are
    typical estimates (±10–15%) for home-style Indian portions. */
 
+// t = default clock time (24h) used when a meal has no time of its own
 const SLOTS = [
-  { id: 'breakfast', name: 'Breakfast', time: '8:00 AM', icon: '🍳' },
-  { id: 'lunch', name: 'Lunch', time: 'Office', icon: '🍱' },
-  { id: 'pregym', name: 'Pre-gym snack', time: '6:15 PM', icon: '🍌' },
-  { id: 'dinner', name: 'Dinner', time: '9:00 PM', icon: '🍛' },
-  { id: 'snack', name: 'Other / late snack', time: 'Anytime', icon: '🥛' },
+  { id: 'breakfast', name: 'Breakfast', time: '8:00 AM', t: '08:00', icon: '🍳' },
+  { id: 'lunch', name: 'Lunch', time: 'Office', t: '13:00', icon: '🍱' },
+  { id: 'pregym', name: 'Pre-gym snack', time: '6:15 PM', t: '18:15', icon: '🍌' },
+  { id: 'dinner', name: 'Dinner', time: '9:00 PM', t: '21:00', icon: '🍛' },
+  { id: 'snack', name: 'Late snack / other', time: 'Anytime', t: '22:30', icon: '🥛' },
 ];
+const QUICK_MEAL_NAMES = ['Snack', 'Tea / coffee', 'Post-gym', 'Brunch', 'Extra meal', 'Late snack'];
 
 const FOOD_CATS = [
   { id: 'bf', name: 'Breakfast' },

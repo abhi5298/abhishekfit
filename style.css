@@ -218,5 +218,19 @@ a.card { display: block; }
 button:disabled { cursor: default; }
 .center { text-align: center; }
 
+/* coach chat + 6-tab nav */
+.nav-in { grid-template-columns: repeat(6, 1fr); }
+.tab { font-size: 10.5px; }
+.chat { display: flex; flex-direction: column; gap: 10px; }
+.bubble { max-width: 92%; padding: 10px 14px; border-radius: 16px; font-size: 15px; line-height: 1.45; overflow-wrap: anywhere; }
+.bubble.me { align-self: flex-end; background: var(--brand); color: var(--on-brand); border-bottom-right-radius: 5px; }
+.bubble.ai { align-self: flex-start; background: var(--surface2); border-bottom-left-radius: 5px; }
+.bubble.err { align-self: stretch; background: #fde8e8; color: #7a1f1f; max-width: 100%; }
+.bubble p { margin: 0; }
+.bubble p + p, .bubble ul { margin-top: 8px; }
+.bubble ul { padding-left: 18px; margin-bottom: 0; }
+.bubble li + li { margin-top: 4px; }
+.chip[disabled], .btn[disabled] { opacity: .5; }
+
 .timer { white-space: nowrap; }
 .timer span { font-variant-numeric: tabular-nums; }

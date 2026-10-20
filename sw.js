@@ -1,5 +1,5 @@
 ﻿/* AbhiFit service worker: offline app shell + cached exercise images. */
-const VERSION = 'abhifit-v1';
+const VERSION = 'abhifit-v2';
 const SHELL = ['./', './index.html', './style.css', './data.js', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 const IMG_CACHE = 'abhifit-images-v1';
 const IMG_HOSTS = ['cdn.jsdelivr.net', 'raw.githubusercontent.com'];
