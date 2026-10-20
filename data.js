@@ -397,6 +397,28 @@ const EXERCISES = {
     steps: ['Hands on a wall, one foot back with the heel flat on the floor.', 'Lean forward until you feel the stretch in your calf.', 'Hold 30 seconds each leg.'], mistakes: ['Lifting the back heel'], start: '30 sec each leg.', yt: 'calf stretch against wall' },
 };
 
+// Gym classes & other activities. met = approximate MET value (Compendium of Physical Activities) used only for calorie estimates.
+const ACTIVITY_TYPES = [
+  { id: 'crossfit', name: 'CrossFit', icon: '🏋️', met: 8 },
+  { id: 'zumba', name: 'Zumba', icon: '💃', met: 6.5 },
+  { id: 'bhangra', name: 'Bhangra', icon: '🕺', met: 6.5 },
+  { id: 'hiit', name: 'HIIT / Circuit', icon: '🔥', met: 8.5 },
+  { id: 'aerobics', name: 'Aerobics', icon: '🤸', met: 6.5 },
+  { id: 'spin', name: 'Spinning class', icon: '🚴', met: 8.5 },
+  { id: 'yoga', name: 'Yoga', icon: '🧘', met: 3 },
+  { id: 'pilates', name: 'Pilates', icon: '🧘‍♂️', met: 3 },
+  { id: 'swim', name: 'Swimming', icon: '🏊', met: 6 },
+  { id: 'run', name: 'Running / Jogging', icon: '🏃', met: 9 },
+  { id: 'walk', name: 'Brisk walk', icon: '🚶', met: 4.3 },
+  { id: 'badminton', name: 'Badminton', icon: '🏸', met: 5.5 },
+  { id: 'boxing', name: 'Boxing / Martial arts', icon: '🥊', met: 7.5 },
+  { id: 'sport', name: 'Cricket / Football', icon: '⚽', met: 6 },
+  { id: 'stretch', name: 'Stretching / Mobility', icon: '🤗', met: 2.5 },
+  { id: 'other', name: 'Other', icon: '✨', met: 5 },
+];
+const INTENSITY = { easy: 0.8, moderate: 1, hard: 1.2 };
+const EX_GROUPS = ['Legs', 'Chest', 'Back', 'Shoulders', 'Arms', 'Glutes', 'Core', 'Full body', 'Other'];
+
 const WARMUP = ['arm_circles', 'bw_squat', 'cat_stretch'];
 const COOLDOWN = ['hamstring_stretch', 'quad_stretch', 'chest_stretch', 'childs_pose', 'calf_stretch'];
 
